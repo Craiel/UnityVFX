@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.VFX
+﻿namespace Assets.Scripts.Craiel.VFX
 {
     public struct VFXTicket
     {

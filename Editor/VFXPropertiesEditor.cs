@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.VFX.Editor
+﻿namespace Assets.Scripts.Craiel.VFX.Editor
 {
     using Rotorz.ReorderableList;
     using Scripts.Editor;
