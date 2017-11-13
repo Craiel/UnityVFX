@@ -1,5 +1,6 @@
 ﻿namespace Assets.Scripts.Craiel.VFX.Editor
 {
+    using Essentials.Editor.ReorderableList;
     using Rotorz.ReorderableList;
     using Scripts.Editor;
     using UnityEditor;

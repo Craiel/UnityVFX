@@ -1,19 +1,15 @@
 ﻿namespace Assets.Scripts.Craiel.VFX
 {
     using System.Collections.Generic;
-    using CoreGame;
-    using CoreGame.Events;
     using Craiel.Essentials;
     using Craiel.Essentials.Enums;
     using Craiel.Essentials.Event;
     using Craiel.Essentials.Resource;
     using Craiel.Essentials.Scene;
     using Craiel.GameData;
-    using Data;
-    using Data.Runtime;
-    using Enums;
-    using Logic;
+    using GameData.Events;
     using NLog;
+    using SetupCode;
     using UnityEngine;
 
     public class VFXSystem : UnitySingletonBehavior<VFXSystem>
@@ -52,7 +48,6 @@
             base.Awake();
 
             GameEvents.Instance.Subscribe<EventGameDataLoaded>(this.OnGameDataReloaded);
-            GameEvents.Instance.Subscribe<EventAbilityExecuted>(this.OnAbilityExecuted);
         }
 
         public void Update()
@@ -136,17 +131,6 @@
                         InitializePool(sheet);
                     }
                 }
-            }
-        }
-
-        private void OnAbilityExecuted(EventAbilityExecuted eventdata)
-        {
-            var instance = GameLogicCore.Instance.Get<AbilityInstance>(eventdata.InstanceId);
-            var abilityData = GameRuntimeData.Instance.Get<RuntimeAbilityData>(instance.DataId);
-            if (abilityData.VFX != GameDataId.Invalid)
-            {
-                VFXInstance vfxInstance = this.Create(abilityData.VFX);
-                vfxInstance.Initialize(eventdata.InstanceId);
             }
         }
 
