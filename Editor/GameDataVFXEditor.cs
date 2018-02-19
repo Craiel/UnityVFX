@@ -1,8 +1,6 @@
 ﻿namespace Assets.Scripts.Craiel.VFX.Editor
 {
-    using GameData.Editor;
     using GameData.Editor.Common;
-    using GameData.Editor.Enums;
     using UnityEditor;
 
     [CustomEditor(typeof(GameDataVFX))]
@@ -12,42 +10,23 @@
         private static bool propertiesFoldout = true;
 
         // -------------------------------------------------------------------
-        // Public
+        // Protected
         // -------------------------------------------------------------------
-        public override void DrawGUI()
+        protected override void DrawCompact()
         {
-            switch (GameDataEditorCore.Config.GetViewMode())
-            {
-                case GameDataEditorViewMode.Compact:
-                {
-                    this.DrawCompact();
-                    break;
-                }
-                    
-                case GameDataEditorViewMode.Full:
-                {
-                    this.DrawFull();
-                    break;
-                }
-            }
-        }
-
-        // -------------------------------------------------------------------
-        // Private
-        // -------------------------------------------------------------------
-        private void DrawCompact()
-        {
-            
         }
         
-        private void DrawFull()
+        protected override void DrawFull()
         {
             this.DrawProperties();
         }
         
+        // -------------------------------------------------------------------
+        // Private
+        // -------------------------------------------------------------------
         private void DrawProperties()
         {
-            if (this.DrawFoldout("Properties", ref propertiesFoldout))
+            if (this.DrawFoldout("VFX Properties", ref propertiesFoldout))
             {
                 // TODO
             }
