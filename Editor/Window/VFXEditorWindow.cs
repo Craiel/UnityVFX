@@ -2,7 +2,6 @@
 
 namespace Assets.Scripts.Craiel.VFX.Editor.Window
 {
-    using Craiel.Editor.GameData;
     using Essentials.Editor;
     using Essentials.Event;
     using Essentials.Event.Editor;
@@ -11,7 +10,7 @@ namespace Assets.Scripts.Craiel.VFX.Editor.Window
 
     public class VFXEditorWindow : EssentialEditorWindow<VFXEditorWindow>
     {
-        private readonly VFXNodeEditor nodeEditor;
+        private VFXNodeEditor nodeEditor;
 
         private GameDataVFX activeVFX;
 
@@ -36,6 +35,8 @@ namespace Assets.Scripts.Craiel.VFX.Editor.Window
         public override void OnEnable()
         {
             base.OnEnable();
+            
+            VFXEditorCore.Initialize();
 
             this.eventGameDataChangedTicket = EditorEvents.Subscribe<EditorEventGameDataSelectionChanged>(this.OnGameDataSelectionChanged);
         }
@@ -44,6 +45,9 @@ namespace Assets.Scripts.Craiel.VFX.Editor.Window
         {
             this.eventGameDataChangedTicket.Dispose();
             this.eventGameDataChangedTicket = null;
+
+            this.nodeEditor.Dispose();
+            this.nodeEditor = null;
             
             base.OnDestroy();
         }

@@ -1,5 +1,6 @@
 ﻿namespace Assets.Scripts.Craiel.VFX.Editor.Window
 {
+    using System;
     using Essentials.Editor.NodeEditor;
     using UnityEngine;
 
@@ -12,6 +13,7 @@
         // -------------------------------------------------------------------
         public VFXNodeEditor()
         {
+            this.ContextMenu = new VFXNodeEditorContextMenu();
         }
         
         // -------------------------------------------------------------------
