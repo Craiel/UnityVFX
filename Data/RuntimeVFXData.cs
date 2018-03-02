@@ -19,7 +19,8 @@ namespace Assets.Scripts.Craiel.VFX.Data
         // -------------------------------------------------------------------
         // Public
         // -------------------------------------------------------------------
-        
+        [SerializeField]
+        public List<RuntimeVFXNodeData> Nodes;
         // TODO
 
         public override void PostLoad()
