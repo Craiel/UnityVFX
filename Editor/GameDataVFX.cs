@@ -1,4 +1,6 @@
-﻿namespace Assets.Scripts.Craiel.VFX.Editor
+﻿using IGameDataVFXNode = Craiel.GameData.Editor.Contracts.VFXShared.IGameDataVFXNode;
+
+namespace Assets.Scripts.Craiel.VFX.Editor
 {
     using System.Collections.Generic;
     using Contracts;
