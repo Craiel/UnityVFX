@@ -12,15 +12,6 @@
         // -------------------------------------------------------------------
         public VFXNodeEditor()
         {
-            // Might want to disable this for this case:
-            //this.GridEnableMeasureSections = false;
-
-            this.LayouterEnabled = true;
-            this.Layouter = new ScriptableNodeGridLayouter
-            {
-                ColumnMargin = 8,
-                RowMargin = 8
-            };
         }
         
         // -------------------------------------------------------------------
