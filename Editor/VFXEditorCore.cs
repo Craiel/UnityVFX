@@ -1,7 +1,10 @@
-﻿namespace Assets.Scripts.Craiel.VFX.Editor
+﻿using IVFXEditorComponentFactory = Craiel.GameData.Editor.Contracts.VFXShared.IVFXEditorComponentFactory;
+
+namespace Assets.Scripts.Craiel.VFX.Editor
 {
     using System;
     using System.Collections.Generic;
+    using System.Runtime.CompilerServices;
     using Components;
     using Contracts;
     using Essentials.Component;
@@ -15,11 +18,10 @@
         // -------------------------------------------------------------------
         static VFXEditorCore()
         {
-            Components = new List<Type>
-            {
-                typeof(VFXIntegratedEditorComponentParticle),
-                typeof(VFXIntegratedEditorComponentPrefab)
-            };
+            ComponentFactories = new List<IVFXEditorComponentFactory>();
+            
+            // Add the integrated factory
+            AddComponent(new VFXIntegratedEditorComponentFactory());
         }
         
         // -------------------------------------------------------------------
@@ -29,7 +31,7 @@
 
         public static VFXEditorConfig Config { get; private set; }
         
-        public static IList<Type> Components { get; private set; }
+        public static IList<IVFXEditorComponentFactory> ComponentFactories { get; private set; }
 
         public static void Initialize()
         {
@@ -46,14 +48,14 @@
             IsInitialized = true;
         }
 
-        public static void AddComponent<T>()
+        public static void AddComponent(IVFXEditorComponentFactory componentFactory)
         {
-            if (Components.Contains(typeof(T)))
+            if (ComponentFactories.Contains(componentFactory))
             {
-                throw new InvalidOperationException("VFX Component was already registered!");
+                throw new InvalidOperationException("VFX Component Factory was already registered!");
             }
             
-            Components.Add(typeof(T));
+            ComponentFactories.Add(componentFactory);
             EditorEvents.Send(new EditorEventVFXComponentsChanged());
         }
     }

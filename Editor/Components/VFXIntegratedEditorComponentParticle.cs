@@ -2,9 +2,8 @@
 {
     public class VFXIntegratedEditorComponentParticle : VFXIntegratedEditorComponentPrefab
     {
-        public override string Name
-        {
-            get { return "Particle"; }
-        }
+        // -------------------------------------------------------------------
+        // Public
+        // -------------------------------------------------------------------
     }
 }
