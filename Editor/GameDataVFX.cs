@@ -39,9 +39,12 @@ namespace Assets.Scripts.Craiel.VFX.Editor
 
             this.BuildBase(context, runtime);
 
-            foreach (IGameDataVFXNode node in this.Nodes)
+            if (this.Nodes != null)
             {
-                node.Build(this, context);
+                foreach (IGameDataVFXNode node in this.Nodes)
+                {
+                    node.Build(this, context);
+                }
             }
 
             context.AddBuildResult(runtime);
