@@ -1,8 +1,8 @@
-﻿namespace Assets.Scripts.Craiel.VFX.Editor
+﻿namespace Craiel.UnityVFX.Editor
 {
-    using Essentials.Editor;
     using UnityEditor;
     using UnityEngine;
+    using UnityEssentials.Editor;
     using Window;
 
     public class SceneToolbarVFX : SceneToolbarWidget

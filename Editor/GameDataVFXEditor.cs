@@ -1,6 +1,7 @@
-﻿namespace Assets.Scripts.Craiel.VFX.Editor
+﻿using GameDataObjectEditor = Craiel.UnityGameData.Editor.Common.GameDataObjectEditor;
+
+namespace Craiel.UnityVFX.Editor
 {
-    using GameData.Editor.Common;
     using UnityEditor;
 
     [CustomEditor(typeof(GameDataVFX))]

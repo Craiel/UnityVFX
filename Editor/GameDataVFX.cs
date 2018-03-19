@@ -1,13 +1,11 @@
-﻿using IGameDataVFXNode = Craiel.GameData.Editor.Contracts.VFXShared.IGameDataVFXNode;
-
-namespace Assets.Scripts.Craiel.VFX.Editor
+﻿namespace Craiel.UnityVFX.Editor
 {
     using System.Collections.Generic;
-    using Contracts;
     using Data;
-    using GameData.Editor.Builder;
-    using GameData.Editor.Common;
     using UnityEngine;
+    using UnityGameData.Editor.Builder;
+    using UnityGameData.Editor.Common;
+    using UnityGameData.Editor.Contracts.VFXShared;
 
     public class GameDataVFX : GameDataObject
     {

@@ -1,13 +1,13 @@
 ﻿using IVFXEditorComponent = Craiel.GameData.Editor.Contracts.VFXShared.IVFXEditorComponent;
-using IVFXEditorComponentFactory = Craiel.GameData.Editor.Contracts.VFXShared.IVFXEditorComponentFactory;
+using VFXEditorComponentDescriptor = Craiel.UnityGameData.VFXShared.VFXEditorComponentDescriptor;
+using VFXShared_IVFXEditorComponentFactory = Craiel.UnityGameData.Editor.Contracts.VFXShared.IVFXEditorComponentFactory;
 
-namespace Assets.Scripts.Craiel.VFX.Editor.Components
+namespace Craiel.UnityVFX.Editor.Components
 {
-    using System;
     using System.Collections.Generic;
     using UnityEngine;
 
-    public class VFXIntegratedEditorComponentFactory : IVFXEditorComponentFactory
+    public class VFXIntegratedEditorComponentFactory : VFXShared_IVFXEditorComponentFactory
     {
         // -------------------------------------------------------------------
         // Constructor

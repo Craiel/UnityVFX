@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.Craiel.VFX.Editor
+﻿namespace Craiel.UnityVFX.Editor
 {
     public static class VFXEditorConstants
     {

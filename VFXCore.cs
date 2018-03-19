@@ -1,7 +1,8 @@
-﻿namespace Assets.Scripts.Craiel.VFX
+﻿using IVFXConfig = Craiel.UnityVFX.Contracts.IVFXConfig;
+
+namespace Craiel.UnityVFX
 {
-    using Contracts;
-    using Essentials.Component;
+    using UnityEssentials.Component;
 
     public class VFXCore
     {

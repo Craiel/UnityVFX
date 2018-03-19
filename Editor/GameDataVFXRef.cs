@@ -1,9 +1,10 @@
-﻿namespace Assets.Scripts.Craiel.VFX.Editor
+﻿namespace Craiel.UnityVFX.Editor
 {
     using System.Collections.Generic;
     using System.Linq;
-    using Craiel.Editor.GameData;
-    using GameData.Editor;
+    using Assets.Scripts.Craiel.Editor.GameData;
+    using UnityGameData.Editor;
+
     public class GameDataVFXRef : GameDataRefBase
     {
         // -------------------------------------------------------------------

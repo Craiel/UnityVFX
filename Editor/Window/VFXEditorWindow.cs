@@ -1,12 +1,12 @@
 ﻿using EditorEventGameDataSelectionChanged = Craiel.GameData.Editor.Events.EditorEventGameDataSelectionChanged;
 
-namespace Assets.Scripts.Craiel.VFX.Editor.Window
+namespace Craiel.UnityVFX.Editor.Window
 {
-    using Essentials.Editor;
-    using Essentials.Event;
-    using Essentials.Event.Editor;
     using UnityEditor;
     using UnityEngine;
+    using UnityEssentials.Editor;
+    using UnityEssentials.Event;
+    using UnityEssentials.Event.Editor;
 
     public class VFXEditorWindow : EssentialEditorWindow<VFXEditorWindow>
     {
@@ -106,7 +106,7 @@ namespace Assets.Scripts.Craiel.VFX.Editor.Window
                 this.nodeEditor.Draw(contentRect, this.activeVFX);
             }
 
-            ProcessEvents(Event.current);
+            this.ProcessEvents(Event.current);
 
             if (GUI.changed)
             {

@@ -1,15 +1,14 @@
-﻿using IVFXEditorComponentFactory = Craiel.GameData.Editor.Contracts.VFXShared.IVFXEditorComponentFactory;
+﻿using IVFXEditorComponentFactory = Craiel.UnityGameData.Editor.Contracts.VFXShared.IVFXEditorComponentFactory;
 
-namespace Assets.Scripts.Craiel.VFX.Editor
+namespace Craiel.UnityVFX.Editor
 {
     using System;
     using System.Collections.Generic;
-    using System.Runtime.CompilerServices;
     using Components;
     using Contracts;
-    using Essentials.Component;
-    using Essentials.Event.Editor;
     using Events;
+    using UnityEssentials.Component;
+    using UnityEssentials.Event.Editor;
 
     public class VFXEditorCore
     {

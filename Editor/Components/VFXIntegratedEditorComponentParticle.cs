@@ -1,4 +1,4 @@
-﻿namespace Assets.Scripts.Craiel.VFX.Editor.Components
+﻿namespace Craiel.UnityVFX.Editor.Components
 {
     public class VFXIntegratedEditorComponentParticle : VFXIntegratedEditorComponentPrefab
     {

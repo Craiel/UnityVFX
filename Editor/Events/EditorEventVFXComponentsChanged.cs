@@ -1,7 +1,7 @@
-﻿namespace Assets.Scripts.Craiel.VFX.Editor.Events
+﻿namespace Craiel.UnityVFX.Editor.Events
 {
-    using Essentials.Contracts.Editor;
-    
+    using UnityEssentials.Contracts.Editor;
+
     public class EditorEventVFXComponentsChanged : IEditorEvent
     {
     }

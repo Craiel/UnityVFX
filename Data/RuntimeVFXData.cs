@@ -1,9 +1,9 @@
-namespace Assets.Scripts.Craiel.VFX.Data
+using RuntimeGameData = Craiel.UnityGameData.RuntimeGameData;
+
+namespace Craiel.UnityVFX.Data
 {
     using System;
     using System.Collections.Generic;
-    using Craiel.Essentials.Resource;
-    using Craiel.GameData;
     using UnityEngine;
 
     [Serializable]

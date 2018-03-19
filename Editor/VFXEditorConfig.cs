@@ -1,7 +1,7 @@
-﻿namespace Assets.Scripts.Craiel.VFX.Editor
+﻿namespace Craiel.UnityVFX.Editor
 {
     using Enums;
-    using Essentials.Editor;
+    using UnityEssentials.Editor;
 
     public class VFXEditorConfig : EditorConfig<VFXEditorConfigKeys>
     {

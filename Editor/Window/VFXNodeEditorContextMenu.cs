@@ -1,16 +1,15 @@
 ﻿using IVFXEditorComponent = Craiel.GameData.Editor.Contracts.VFXShared.IVFXEditorComponent;
-using IVFXEditorComponentFactory = Craiel.GameData.Editor.Contracts.VFXShared.IVFXEditorComponentFactory;
+using IVFXEditorComponentFactory = Craiel.UnityGameData.Editor.Contracts.VFXShared.IVFXEditorComponentFactory;
+using VFXEditorComponentDescriptor = Craiel.UnityGameData.VFXShared.VFXEditorComponentDescriptor;
 
-namespace Assets.Scripts.Craiel.VFX.Editor.Window
+namespace Craiel.UnityVFX.Editor.Window
 {
-    using System;
     using System.Collections.Generic;
-    using Components;
-    using Essentials.Editor;
-    using Essentials.Event;
-    using Essentials.Event.Editor;
     using Events;
     using UnityEngine;
+    using UnityEssentials.Editor;
+    using UnityEssentials.Event;
+    using UnityEssentials.Event.Editor;
 
     public class VFXNodeEditorContextMenu : DynamicContextMenu
     {

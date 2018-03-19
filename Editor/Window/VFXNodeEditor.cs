@@ -1,8 +1,7 @@
-﻿namespace Assets.Scripts.Craiel.VFX.Editor.Window
+﻿namespace Craiel.UnityVFX.Editor.Window
 {
-    using System;
-    using Essentials.Editor.NodeEditor;
     using UnityEngine;
+    using UnityEssentials.Editor.NodeEditor;
 
     public class VFXNodeEditor : ScriptableNodeEditor
     {
