@@ -1,7 +1,8 @@
 {
     "name": "Craiel.UnityVFX",
     "references": [
-        "Craiel.UnityGameData"
+        "Craiel.UnityGameData",
+        "Craiel.UnityEssentials"
     ],
     "includePlatforms": [],
     "excludePlatforms": []
