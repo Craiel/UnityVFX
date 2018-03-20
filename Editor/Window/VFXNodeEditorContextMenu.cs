@@ -32,8 +32,7 @@ namespace Craiel.UnityVFX.Editor.Window
         {
             if (isDisposing)
             {
-                this.eventVfxComponentsChangedTicket.Dispose();
-                this.eventVfxComponentsChangedTicket = null;
+                EditorEvents.Unsubscribe(ref this.eventVfxComponentsChangedTicket);
             }
             
             base.Dispose(isDisposing);

@@ -1,7 +1,6 @@
-﻿using EditorEventGameDataSelectionChanged = Craiel.GameData.Editor.Events.EditorEventGameDataSelectionChanged;
-
-namespace Craiel.UnityVFX.Editor.Window
+﻿namespace Craiel.UnityVFX.Editor.Window
 {
+    using GameData.Editor.Events;
     using UnityEditor;
     using UnityEngine;
     using UnityEssentials.Editor;
@@ -43,8 +42,7 @@ namespace Craiel.UnityVFX.Editor.Window
 
         public override void OnDestroy()
         {
-            this.eventGameDataChangedTicket.Dispose();
-            this.eventGameDataChangedTicket = null;
+            EditorEvents.Unsubscribe(ref this.eventGameDataChangedTicket);
 
             this.nodeEditor.Dispose();
             this.nodeEditor = null;

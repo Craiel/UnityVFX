@@ -2,7 +2,6 @@
 {
     using System.Collections.Generic;
     using System.Linq;
-    using Assets.Scripts.Craiel.Editor.GameData;
     using UnityGameData.Editor;
 
     public class GameDataVFXRef : GameDataRefBase
