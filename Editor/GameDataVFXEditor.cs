@@ -1,8 +1,7 @@
-﻿using GameDataObjectEditor = Craiel.UnityGameData.Editor.Common.GameDataObjectEditor;
-
-namespace Craiel.UnityVFX.Editor
+﻿namespace Craiel.UnityVFX.Editor
 {
     using UnityEditor;
+    using UnityGameData.Editor.Common;
 
     [CustomEditor(typeof(GameDataVFX))]
     [CanEditMultipleObjects]
