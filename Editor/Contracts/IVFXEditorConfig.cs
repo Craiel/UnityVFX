@@ -1,6 +1,6 @@
 ﻿namespace Craiel.UnityVFX.Editor.Contracts
 {
-    using UnityEssentials.Contracts;
+    using UnityEssentials.Runtime.Contracts;
 
     public interface IVFXEditorConfig : ICraielComponentConfig
     {

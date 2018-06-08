@@ -1,8 +1,8 @@
-﻿using VFXEdiorComponentBase = Craiel.UnityGameData.VFXShared.VFXEdiorComponentBase;
-
-namespace Craiel.UnityVFX.Editor.Components
+﻿namespace Craiel.UnityVFX.Editor.Components
 {
-    public class VFXIntegratedEditorComponentPrefab : VFXEdiorComponentBase
+    using UnityGameData.VFXShared;
+
+    public class VFXIntegratedEditorComponentPrefab : VFXEditorComponentBase
     {
         // -------------------------------------------------------------------
         // Public

@@ -1,10 +1,9 @@
-using RuntimeGameData = Craiel.UnityGameData.RuntimeGameData;
-
-namespace Craiel.UnityVFX.Data
+namespace Craiel.UnityVFX.Runtime.Data
 {
     using System;
     using System.Collections.Generic;
     using UnityEngine;
+    using UnityGameData.Runtime;
 
     [Serializable]
     public class RuntimeVFXData : RuntimeGameData

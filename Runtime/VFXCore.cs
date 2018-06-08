@@ -1,8 +1,7 @@
-﻿using IVFXConfig = Craiel.UnityVFX.Contracts.IVFXConfig;
-
-namespace Craiel.UnityVFX
+﻿namespace Craiel.UnityVFX.Runtime
 {
-    using UnityEssentials.Component;
+    using Contracts;
+    using UnityEssentials.Runtime.Component;
 
     public class VFXCore
     {

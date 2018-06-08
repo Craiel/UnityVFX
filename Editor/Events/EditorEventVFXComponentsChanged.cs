@@ -1,6 +1,6 @@
 ﻿namespace Craiel.UnityVFX.Editor.Events
 {
-    using UnityEssentials.Contracts.Editor;
+    using UnityEssentials.Runtime.Contracts.Editor;
 
     public class EditorEventVFXComponentsChanged : IEditorEvent
     {

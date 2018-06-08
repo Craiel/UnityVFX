@@ -8,8 +8,8 @@ namespace Craiel.UnityVFX.Editor.Window
     using Events;
     using UnityEngine;
     using UnityEssentials.Editor;
-    using UnityEssentials.Event;
-    using UnityEssentials.Event.Editor;
+    using UnityEssentials.Runtime.Event;
+    using UnityEssentials.Runtime.Event.Editor;
 
     public class VFXNodeEditorContextMenu : DynamicContextMenu
     {
