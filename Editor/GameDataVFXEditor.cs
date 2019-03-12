@@ -10,20 +10,10 @@
         private static bool propertiesFoldout = true;
 
         // -------------------------------------------------------------------
-        // Public
-        // -------------------------------------------------------------------
-        public override void DrawCompact()
-        {
-            base.DrawCompact();
-        }
-        
-        // -------------------------------------------------------------------
         // Protected
         // -------------------------------------------------------------------
-        protected override void DrawFull()
+        protected override void DoDrawFull()
         {
-            base.DrawFull();
-
             this.DrawProperties();
         }
         

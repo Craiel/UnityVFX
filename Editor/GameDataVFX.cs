@@ -15,9 +15,12 @@
         [SerializeField]
         public List<IGameDataVFXNode> Nodes;
 
-        public override void Validate(GameDataBuildValidationContext context)
+        // -------------------------------------------------------------------
+        // Protected
+        // -------------------------------------------------------------------
+        protected override void DoValidate(GameDataBuildValidationContext context)
         {
-            base.Validate(context);
+            base.DoValidate(context);
 
             if (this.Nodes == null || this.Nodes.Count == 0)
             {
@@ -31,8 +34,10 @@
             }
         }
 
-        public override void Build(GameDataBuildContext context)
+        protected override void DoBuild(GameDataBuildContext context)
         {
+            base.DoBuild(context);
+            
             var runtime = new RuntimeVFXData();
 
             this.BuildBase(context, runtime);
