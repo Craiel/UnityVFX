@@ -2,7 +2,7 @@
 
 Basic VFX System using Craiel GameData with support for Audio, Particle Systems, Particle Modifiers, Custom and Fixed Timing and other helpers.
 
-**WARNING**: This package is work an progress and not ready for Production
+**WARNING**: This package is work in progress and not ready for Production
 
 ## Getting Started
 
