@@ -1,4 +1,4 @@
-# Creaiel Unity VFX
+# Craiel Unity VFX
 
 Basic VFX System using Craiel GameData with support for Audio, Particle Systems, Particle Modifiers, Custom and Fixed Timing and other helpers.
 
