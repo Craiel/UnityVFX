@@ -7,7 +7,7 @@
     using UnityEssentials.Runtime.Event;
     using UnityEssentials.Runtime.Event.Editor;
 
-    public class VFXEditorWindow : EssentialEditorWindow<VFXEditorWindow>
+    public class VFXEditorWindow : EssentialEditorWindowIM<VFXEditorWindow>
     {
         private VFXNodeEditor nodeEditor;
 
